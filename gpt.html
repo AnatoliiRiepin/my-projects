@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="gpt.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the form below to register for our online course.</p>
+        </header>
+        <form id="survey-form" action="/submit" method="post">
+
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+
+            <label for="age" id="number-label">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="web-development">Web Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="digital-marketing">Digital Marketing</option>
+            </select>
+
+
+            <label>Proficiency Level:</label>
+            <div class="radio-group">
+                <div>
+                    <input type="radio" id="beginner" name="proficiency" value="beginner" required>
+                    <label for="beginner">Beginner</label>
+                </div>
+                <div>
+                    <input type="radio" id="intermediate" name="proficiency" value="intermediate" required>
+                    <label for="intermediate">Intermediate</label>
+                </div>
+                <div>
+                    <input type="radio" id="advanced" name="proficiency" value="advanced" required>
+                    <label for="advanced">Advanced</label>
+                </div>
+            </div>
+
+
+            <label>Preferred Class Days:</label>
+            <div class="checkbox-group">
+                <div>
+                    <input type="checkbox" id="monday" name="class-days" value="monday">
+                    <label for="monday">Monday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tuesday" name="class-days" value="tuesday">
+                    <label for="tuesday">Tuesday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="wednesday" name="class-days" value="wednesday">
+                    <label for="wednesday">Wednesday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="thursday" name="class-days" value="thursday">
+                    <label for="thursday">Thursday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="friday" name="class-days" value="friday">
+                    <label for="friday">Friday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="saturday" name="class-days" value="saturday">
+                    <label for="saturday">Saturday</label>
+                </div>
+            </div>
+
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"
+                placeholder="Enter any additional comments or preferences"></textarea>
+
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</body>
+
+</html>
